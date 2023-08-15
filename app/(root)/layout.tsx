@@ -10,10 +10,10 @@ import Bottombar from '@/components/shared/Bottombar'
 const inter = Inter({ subsets: ['latin'] })
 const lexend = Lexend({subsets: ['latin']})
 
-export const metadata = {
-  title:'Threads',
-  description: 'A Nextjs 13 Meta Threads App'
-
+export const metadata: Metadata = {
+  title: 'SigmaGram',
+  description: 'Socialmedia for sigmas',
+  icons: { icon: '/assets/favicon.ico' },
 }
 
 export default function RootLayout({
