@@ -1,11 +1,16 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-
+import { Inter, Lexend, Pacifico } from 'next/font/google'
 import ThreadCard from "@/components/cards/ThreadCard";
 import Pagination from "@/components/shared/Pagination";
 
 import { fetchPosts } from "@/lib/actions/thread.actions";
 import { fetchUser } from "@/lib/actions/user.actions";
+
+const pacifico = Pacifico({
+  subsets: ['latin'],
+  weight: "400"
+})
 
 async function Home({
   searchParams,
@@ -25,9 +30,10 @@ async function Home({
 
   return (
     <>
-      <h1 className='head-text text-left'>Home</h1>
+      <h1 className={`head-text tracking-wider font-semibold text-left ${pacifico.className}`}>Home</h1>
 
-      <section className='mt-9 flex flex-col gap-10'>
+
+      <section className='mt-5 flex flex-col gap-4'>
         {result.posts.length === 0 ? (
           <p className='no-result'>No threads found</p>
         ) : (
