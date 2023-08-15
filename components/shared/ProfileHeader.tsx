@@ -10,6 +10,7 @@ interface Props {
   bio: string;
   type?: string;
 }
+
 function ProfileHeader({
   accountId,
   authUserId,
@@ -52,8 +53,6 @@ function ProfileHeader({
               <p className='text-light-2 max-sm:hidden'>Edit</p>
             </div>
           </Link>
-
-            
         )}
       </div>
 
