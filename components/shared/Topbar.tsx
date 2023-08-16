@@ -1,14 +1,20 @@
 import { OrganizationSwitcher, SignedIn, SignOutButton } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import Image from "next/image";
+import { Caveat, Lexend } from "next/font/google";
 import Link from "next/link";
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: "400"
+})
+const lexend = Lexend({subsets: ['latin']})
 
 function Topbar() {
   return (
     <nav className='topbar'>
       <Link href='/' className='flex items-center gap-4'>
         <Image src='/assets/favicon.ico' alt='logo' width={35} height={35} />
-        <p className='text-heading3-bold text-light-1'>SigmaGram</p>
+        <p className={`text-heading3-bold tracking-wide text-light-1 {lexend.className}`}>SigmaGram</p>
       </Link>
       
 
