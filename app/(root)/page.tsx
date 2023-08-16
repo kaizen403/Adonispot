@@ -1,11 +1,18 @@
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
-import { Inter, Lexend, Pacifico } from 'next/font/google'
+import { Inter, Pacifico } from 'next/font/google'
 import ThreadCard from "@/components/cards/ThreadCard";
 import Pagination from "@/components/shared/Pagination";
 
 import { fetchPosts } from "@/lib/actions/thread.actions";
 import { fetchUser } from "@/lib/actions/user.actions";
+import { Caveat, Lexend } from "next/font/google";
+import Link from "next/link";
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: "400"
+})
+const lexend = Lexend({subsets: ['latin']})
 
 const pacifico = Pacifico({
   subsets: ['latin'],
@@ -53,6 +60,12 @@ async function Home({
             ))}
           </>
         )}
+        <p className={`lg:hidden text-center text-body-semibold text-slate-500 ${caveat.className}`}>
+    Copyright @ 2023 | made with ♡ by 
+    <Link href='https://www.instagram.com/itz_kaizenn/' className={`text-sky-500 underline`}>
+        @Rishivhavle
+    </Link>
+</p>
       </section>
 
       <Pagination
