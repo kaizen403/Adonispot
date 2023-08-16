@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
-
+import { Analytics } from '@vercel/analytics/react';
 import "../globals.css";
 import Topbar from "@/components/shared/Topbar";
 
@@ -51,12 +51,14 @@ export default function RootLayout({
       <html lang='en'>
         <body className={`${inter.className} bg-dark-1`}>
         <Topbar/>
-          <div className="w-full mt-28">
+          <div className="w-full mt-20">
           <div>{children}</div>
           </div>
         </body>
       </html>
     </ClerkProvider>
+    <Analytics />
+    
     </>
   );
 }
