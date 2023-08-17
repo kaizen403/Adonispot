@@ -1,3 +1,7 @@
+import { LoadingSkeleton } from "@/components/shared/LoadingSkeleton";
+
 export default function Loading() {
-    return <p className="text-white text-2xl font-semibold">Loading Data...</p>;
+    return <div className="flex justify-center items-center">
+        <LoadingSkeleton/>
+    </div>;
 }
