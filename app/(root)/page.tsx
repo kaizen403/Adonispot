@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import { Inter, Pacifico } from 'next/font/google'
 import ThreadCard from "@/components/cards/ThreadCard";
 import Pagination from "@/components/shared/Pagination";
-
+import { Suspense } from 'react'
 import { fetchPosts } from "@/lib/actions/thread.actions";
 import { fetchUser } from "@/lib/actions/user.actions";
 import { Caveat, Lexend } from "next/font/google";
@@ -45,6 +45,7 @@ async function Home({
           <p className='no-result'>No threads found</p>
         ) : (
           <>
+          <Suspense fallback={<p>Loading feed...</p>}>
             {result.posts.map((post) => (
               <ThreadCard
                 key={post._id}
@@ -58,6 +59,7 @@ async function Home({
                 comments={post.children}
               />
             ))}
+          </Suspense>
           </>
         )}
         <p className={`lg:hidden text-center text-body-semibold text-slate-500 ${caveat.className}`}>
