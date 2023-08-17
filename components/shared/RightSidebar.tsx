@@ -48,7 +48,7 @@ async function RightSidebar() {
           )}
         </div>
       </div>
-      <p className={`text-center text-body-semibold text-slate-500 ${caveat.className}`}>Copyright @ 2023 | made with ♡ by <Link href='https://www.instagram.com/itz_kaizenn/' className={`text-sky-500 underline`}>@Rishivhavle</Link></p>
+      <p className={`text-center text-body-semibold text-slate-500 ${lexend.className}`} style={{ fontSize: '13px' }}>Copyright @ 2023 | made with ♡ by <Link href='https://www.instagram.com/itz_kaizenn/' className={`text-sky-500 underline`}>@Rishivhavle</Link></p>
     </section>
   );
 }

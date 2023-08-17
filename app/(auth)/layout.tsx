@@ -51,7 +51,7 @@ export default function RootLayout({
       <html lang='en'>
         <body className={`${inter.className} bg-dark-1`}>
         <Topbar/>
-          <div className="w-full mt-20">
+          <div className="w-full pt-18">
           <div>{children}</div>
           </div>
         </body>
