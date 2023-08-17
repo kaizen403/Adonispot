@@ -45,7 +45,7 @@ async function Home({
           <p className='no-result'>No threads found</p>
         ) : (
           <>
-          <Suspense fallback={<p>Loading feed...</p>}>
+
             {result.posts.map((post) => (
               <ThreadCard
                 key={post._id}
@@ -59,7 +59,6 @@ async function Home({
                 comments={post.children}
               />
             ))}
-          </Suspense>
           </>
         )}
         <p className={`lg:hidden text-center text-body-semibold text-slate-500 ${caveat.className}`}>
