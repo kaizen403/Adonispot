@@ -1,5 +1,10 @@
 import { SignIn } from "@clerk/nextjs";
-import { Lexend } from "next/font/google";
+import { Caveat, Lexend } from "next/font/google";
+import Link from "next/link";
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: "400"
+})
 const lexend = Lexend({subsets: ['latin']})
 
 export default function Page() {
@@ -13,7 +18,9 @@ export default function Page() {
         <div className="pl-5 pr-5 pb-7 lg:w-1/2 flex justify-center items-center">
           <SignIn />
         </div>
+        
       </div>
+      <p className={`text-center text-body-semibold text-slate-500 ${lexend.className}`} style={{ fontSize: '13px' }}>Copyright @ 2023 | made with ♡ by <Link href='https://www.instagram.com/itz_kaizenn/' className={`text-sky-500 underline`}>@Rishivhavle</Link></p>
     </>
   );
 }
