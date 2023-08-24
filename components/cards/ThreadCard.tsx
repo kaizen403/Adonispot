@@ -42,7 +42,7 @@ function ThreadCard({
   return (
     <article
       className={`flex w-full flex-col border-solid border-2 border-sky-950 rounded-xl ${
-        isComment ? "px-0 babythreads sm:babythreadsmobile p-5 xs:px-7" : "babythreads sm:babythreadsmobile p-5"
+        isComment ? "px-0 babythreads sm:babythreadsmobile p-3 xs:px-7" : "babythreads sm:babythreadsmobile p-5"
       }`}
     >
       <div className='flex items-start justify-between'>
