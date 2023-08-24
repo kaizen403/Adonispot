@@ -187,7 +187,20 @@ module.exports = {
         "light-3": "#7878A3",
         "light-4": "#5C5C7B",
         "gray-1": "#697C89",
-        glassmorphism: "rgba(16, 16, 18, 0.60)",
+        glassmorphism: "rgba(4, 23, 36, 0.60)",
+        'seance': {
+          DEFAULT: '#7E2A9F',
+          50: '#F8E4F6',
+          100: '#F2CCF0',
+          200: '#E29CE5',
+          300: '#CB6CD8',
+          400: '#AE3BCB',
+          500: '#7E2A9F',
+          600: '#602383',
+          700: '#451B66',
+          800: '#2D144A',
+          900: '#190C2E'
+        },
       },
       boxShadow: {
         "count-badge": "0px 0px 6px 2px rgba(219, 188, 159, 0.30)",

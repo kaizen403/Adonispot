@@ -2,6 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+.babyhome{
+  background: hsla(236, 100%, 10%, 1);
+
+background: radial-gradient(circle, hsla(236, 100%, 10%, 1) 27%, hsla(0, 0%, 0%, 1) 88%);
+
+background: -moz-radial-gradient(circle, hsla(236, 100%, 10%, 1) 27%, hsla(0, 0%, 0%, 1) 88%);
+
+background: -webkit-radial-gradient(circle, hsla(236, 100%, 10%, 1) 27%, hsla(0, 0%, 0%, 1) 88%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000331", endColorstr="#000000", GradientType=1 );
+background-attachment: fixed;
+height: 100%;
+}
+.babyside{
+  background: hsla(0, 0%, 0%, 1);
+
+background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 24%, hsla(267, 100%, 14%, 1) 97%);
+
+background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 24%, hsla(267, 100%, 14%, 1) 97%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 24%, hsla(267, 100%, 14%, 1) 97%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#210049", GradientType=1 );
+height: 100%
+}
+.babythreads{
+  background: hsla(0, 0%, 0%, 1);
+
+background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 86%, hsla(229, 84%, 5%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 86%, hsla(229, 84%, 5%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 86%, hsla(229, 84%, 5%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#020617", GradientType=1 );
+height: 100%;
+}
+
+.babythreadsmobile{
+background: hsla(0, 0%, 0%, 1);
+
+background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 66%, hsla(229, 84%, 5%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 66%, hsla(229, 84%, 5%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 66%, hsla(229, 84%, 5%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#020617", GradientType=1 );
+height: 100%;
+}
+
+.baby{
+  background: hsla(236, 100%, 10%, 1);
+
+  background: radial-gradient(circle, hsla(236, 100%, 10%, 1) 24%, hsla(0, 0%, 0%, 1) 100%);
+  
+  background: -moz-radial-gradient(circle, hsla(236, 100%, 10%, 1) 24%, hsla(0, 0%, 0%, 1) 100%);
+  
+  background: -webkit-radial-gradient(circle, hsla(236, 100%, 10%, 1) 24%, hsla(0, 0%, 0%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000331", endColorstr="#000000", GradientType=1 );
+background-attachment: fixed;
+height: 100vh;
+}
+
 @layer components {
   /* main */
   .main-container {
@@ -15,7 +80,7 @@
 
   /* Activity */
   .activity-card {
-    @apply flex items-center gap-2 rounded-md bg-dark-2 px-7 py-4;
+    @apply flex items-center gap-2 rounded-md bg-sky-950 px-7 py-4;
   }
 
   /* No Result */
@@ -47,19 +112,19 @@
   }
 
   .user-card_btn {
-    @apply h-auto min-w-[74px] rounded-lg bg-primary-500 text-[12px] text-light-1 !important;
+    @apply h-auto min-w-[74px] rounded-lg bg-sky-900 text-[12px] text-light-1 !important;
   }
 
   .searchbar {
-    @apply flex gap-1 rounded-lg bg-dark-3 px-4 py-2;
+    @apply flex gap-1 rounded-lg bg-sky-900 px-4 py-2;
   }
 
   .searchbar_input {
-    @apply border-none bg-dark-3 text-base-regular text-light-4 outline-none !important;
+    @apply border-none bg-sky-900 text-base-regular text-light-4 outline-none !important;
   }
 
   .topbar {
-    @apply fixed top-0 z-30 flex w-full items-center justify-between bg-dark-2 px-6 py-2;
+    @apply fixed top-0 z-30 flex w-full items-center justify-between border-b border-b-sky-950 bg-slate-950 px-6 py-2;
   }
 
   .bottombar {
@@ -75,7 +140,7 @@
   }
 
   .leftsidebar {
-    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r border-r-dark-4 bg-dark-2 pb-5 pt-28 max-md:hidden;
+    @apply sticky left-0 top-0 z-20 flex h-screen w-fit flex-col justify-between overflow-auto border-r border-r-sky-950 bg-slate-950 pb-5 pt-28 max-md:hidden;
   }
 
   .leftsidebar_link {
@@ -87,7 +152,7 @@
   }
 
   .rightsidebar {
-    @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-l border-l-dark-4 bg-dark-2 px-6 pb-6 pt-28 max-xl:hidden;
+    @apply sticky right-0 top-0 z-20 flex h-screen w-fit flex-col justify-between gap-12 overflow-auto border-l border-l-sky-950 bg-slate-950 px-6 pb-6 pt-28 max-xl:hidden;
   }
 }
 

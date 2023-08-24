@@ -28,7 +28,7 @@ async function RightSidebar() {
         
 
       <div className='flex flex-1 flex-col justify-start'>
-        <h3 className='text-heading4-medium text-light-1'>Similar Minds⭐</h3>
+        <h3 className='text-heading4-medium text-light-1'>Suggestions:</h3>
         <div className='mt-7 flex w-[350px] flex-col gap-10'>
           {similarMinds.users.length > 0 ? (
             <>
@@ -48,7 +48,7 @@ async function RightSidebar() {
           )}
         </div>
       </div>
-      <p className={`text-center text-body-semibold text-slate-500 ${lexend.className}`} style={{ fontSize: '13px' }}>Copyright @ 2023 | made with ♡ by <Link href='https://www.instagram.com/itz_kaizenn/' className={`text-sky-500 underline`}>@Rishivhavle</Link></p>
+      <p className={`text-center text-body-semibold text-sky-950 ${lexend.className}`} style={{ fontSize: '13px' }}>Copyright @ 2023 | made with ♡ by <Link href='https://www.instagram.com/itz_kaizenn/' className={`text-sky-500 underline`}>@Rishivhavle</Link></p>
     </section>
   );
 }

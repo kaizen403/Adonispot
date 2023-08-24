@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   description: 'Socialmedia for sigmas',
   icons: { icon: '/assets/favicon.ico' },
 }
-
 export default function RootLayout({
   children,
 }: {
@@ -29,7 +28,7 @@ export default function RootLayout({
         <Topbar/>
         <main className='flex flex-row'>
           <LeftSidebar/>
-          <section className='main-container'>
+          <section className='main-container babyhome'>
             <div className='w-full  mt-[-28px] max-w-4xl'>
 
               {children}
